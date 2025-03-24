@@ -1,3 +1,14 @@
+/* background puzzle */
+body {
+    background-image: url('images/jigsaw_puzzle_frame_6_a_white.jpg'); /* Update with the correct path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-color: rgba(0, 100, 200, 0.5); /* Semi-transparent blue */
+    background-blend-mode: overlay; /* Blend the color with the image */
+    margin: 0;
+    margin: 0; /* Removes default margin */
+    font-family: Arial, sans-serif; /* Sets a default font */
+}
+/* olac logo */
 header {
     /* Existing header styles */
     position: relative;
@@ -73,21 +84,6 @@ header {
 
 
 
-
-/* background puzzle */
-body {
-    background-image: url('images/jigsaw_puzzle_frame_6_a_white.jpg'); /* Update with the correct path */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-color: rgba(0, 100, 200, 0.5); /* Semi-transparent blue */
-    background-blend-mode: overlay; /* Blend the color with the image */
-    margin: 0;
-    margin: 0; /* Removes default margin */
-    font-family: Arial, sans-serif; /* Sets a default font */
-}
-
-
-
-
 /* Main content container */
 .main-content {
     min-height: calc(100vh - 100px - 100px); /* Adjust based on header/footer height */
@@ -113,6 +109,7 @@ body {
 
 
 
+/* Search icon */
 .search-icon {
     display: flex; /* Use flexbox for easy centering */
     justify-content: center; /* Center horizontally */
@@ -140,9 +137,9 @@ body {
 
 .search-container {
     display: flex;
-    flex-direction: column; /* Stack search input and button */
-    align-items: center; /* Center horizontally */
-    padding-top: 200px ;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
 }
 
 .search-input-wrapper {
@@ -150,7 +147,7 @@ body {
     background-color: transparent;
     align-items: center;
     border: 1px solid black;
-    border-radius: 20px; /* Rounded search bar */
+    border-radius: 20px;
     padding: 10px 20px;
     width: 500px;
 }
@@ -162,9 +159,9 @@ body {
 
 .search-bar {
     border: none;
-    outline: none; /* Remove default focus outline */
+    outline: none;
     padding: 8px;
-    flex-grow: 1; /* Allow input to take up remaining space */
+    flex-grow: 1;
     background-color: transparent;
 }
 
@@ -183,20 +180,19 @@ body {
 
 .search-button-container {
     margin-top: 20px;
-    width: 100px; /* Adjust width as needed */
-    height: 40px; /* Adjust height as needed */
-    border-radius: 20px; /* Adjust radius for rounded corners */
-    background-color: #007BFF;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
-.search-button {
-    border: none;
-    background-color: transparent;
-    color: white;
-    cursor: pointer;
+.search-button-container img { /* Target the image inside the container */
+    width: 30px; /* Adjust magnifier size */
+    height: auto;
 }
 
 
