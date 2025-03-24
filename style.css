@@ -1,0 +1,109 @@
+/* background puzzle */
+body {
+    background-image: url('images/jigsaw_puzzle_frame_6_a_white.jpg'); /* Update with the correct path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    margin: 0; /* Removes default margin */
+    font-family: Arial, sans-serif; /* Sets a default font */
+}
+
+
+
+/* navigation bar */
+.hamburger-menu {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    display: flex;
+    flex-direction: column; /* Stacks the lines vertically */
+    justify-content: space-around; /* Evenly spaces the lines */
+    width: 30px; /* Width of the menu */
+    height: 30px; /* Height of the menu */
+}
+.line {
+    height: 4px; /* Height of each line */
+    background-color: #333; /* Color of the lines */
+    border-radius: 2px; /* Rounds the edges of the lines */
+    transition: all 0.3s ease; /* Smooth transition for animations */
+}
+
+
+
+/*dropdown for the navigation bar*/
+.dropdown-menu {
+    display: none; /* Hide the menu by default */
+    position: absolute; /* Position it absolutely */
+    background-color: rgba(255, 255, 255, 0.9); /* Background color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+.dropdown-menu ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+.dropdown-menu li {
+    padding: 10px 15px; /* Padding for each menu item */
+}
+.dropdown-menu li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Link color */
+    display: block; /* Make the entire area clickable */
+}
+.dropdown-menu li a:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+}
+
+
+
+/*For the search icon in homepage*/
+.search-icon {
+    display: inline-block; /* Allows padding and margin */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+.search-icon img {
+    width: 30px; /* Adjust size as needed */
+    height: auto; /* Maintains aspect ratio */
+}
+
+
+
+/* For the search interface */
+.search-container {
+    text-align: center; /* Centers the search bar */
+    margin-top: 1px; /* Adds space above the search bar */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.search-bar {
+    width: 300px; /* Width of the search bar */
+    padding: 10px; /* Padding inside the search bar */
+    border-radius: 5px; /* Rounds the corners */
+    border: 1px solid #ccc; /* Light border */
+    margin: 0 auto;
+}
+.search-button {
+    padding: 10px 15px; /* Padding for the button */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounds the corners */
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    margin-left: 10px; /* Space between search bar and button */
+}
+
+
+
+/* boxes for main content */
+.information-box {
+    background-color: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
+    border-radius: 15px; /* Rounds the corners */
+    padding: 20px; /* Adds padding inside the box */
+    margin: 20px; /* Adds space around the box */
+    text-align: center; /* Centers the text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
