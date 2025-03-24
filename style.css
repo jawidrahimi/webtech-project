@@ -10,12 +10,15 @@ header {
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust for perfect centering */
 }
-
 .olac-logo {
     height: 50px;
-    /* Add other styles as needed */
+    background-image: inherit; /* Inherit the body's background image */
+    background-color: rgba(0, 100, 200, 0.5); /* Semi-transparent blue */
+    background-blend-mode: overlay; /* Blend the color with the image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
 
 
 /* navigation bar */
