@@ -6,16 +6,14 @@ header {
 
 .logo-container {
     position: absolute;
-    top: 10px; /* Adjust as needed */
+    top: 40px; /* Adjust as needed */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust for perfect centering */
 }
+
 .olac-logo {
     height: 50px;
     background-image: inherit; /* Inherit the body's background image */
-    background-color: rgba(0, 100, 200, 0.5); /* Semi-transparent blue */
-    background-blend-mode: overlay; /* Blend the color with the image */
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -30,44 +28,47 @@ header {
     display: flex;
     flex-direction: column; /* Stacks the lines vertically */
     justify-content: space-around; /* Evenly spaces the lines */
-    width: 30px; /* Width of the menu */
-    height: 30px; /* Height of the menu */
+    width: 40px; /* Width of the menu */
+    height: 40px; /* Height of the menu */
 }
+
 .line {
     height: 4px; /* Height of each line */
     background-color: #333; /* Color of the lines */
     border-radius: 2px; /* Rounds the edges of the lines */
-    transition: all 0.3s ease; /* Smooth transition for animations */
+    transition: all 0.5s ease; /* Smooth transition for animations */
 }
+
 /*dropdown for the navigation bar*/
 .dropdown-menu {
     display: none;
     position: absolute;
     top: 80px; /* Adjust based on hamburger menu height */
     left: 40px; /* Match hamburger menu left position */
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: white;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
+
 .dropdown-menu.show {
     display: block;
 }
+
 .dropdown-menu ul {
     list-style-type: none; /* Remove bullet points */
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margin */
 }
+
 .dropdown-menu li {
     padding: 10px 15px; /* Padding for each menu item */
 }
+
 .dropdown-menu li a {
     text-decoration: none; /* Remove underline from links */
     color: #333; /* Link color */
     display: block; /* Make the entire area clickable */
-}
-.dropdown-menu li a:hover {
-    background-color: #f0f0f0; /* Change background on hover */
 }
 
 
@@ -112,44 +113,90 @@ body {
 
 
 
-/* search icon homepage*/
 .search-icon {
-    display: block; /* Change to block for centering */
+    display: flex; /* Use flexbox for easy centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 60px; /* Adjust as needed */
+    height: 60px; /* Adjust as needed */
+    border-radius: 50%; /* Make it a circle */
+    background-color: rgba(0, 0, 0, 0.2); /* Add a background color */
     cursor: pointer;
-    text-align: center; /* Center the image within the container */
-    margin-top: 10px; /* Add space between map and icon */
+    margin: 10px auto; /* Center the icon */
 }
 
 .search-icon img {
-    width: 40px;
+    width: 30px; /* Adjust magnifier size */
     height: auto;
 }
 
 
 
-/* For the search interface */
+/* Search Interface */
+.search-main {
+    text-align: center;
+    margin-top: 150px;
+}
+
 .search-container {
-    text-align: center; /* Centers the search bar */
-    margin-top: 1px; /* Adds space above the search bar */
+    display: flex;
+    flex-direction: column; /* Stack search input and button */
+    align-items: center; /* Center horizontally */
+    padding-top: 200px ;
+}
+
+.search-input-wrapper {
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px; /* Rounded search bar */
+    padding: 10px 20px;
+    width: 500px;
+}
+
+.magnifier-icon {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.search-bar {
+    border: none;
+    outline: none; /* Remove default focus outline */
+    padding: 8px;
+    flex-grow: 1; /* Allow input to take up remaining space */
+    background-color: transparent;
+}
+
+.search-bar::placeholder {
+    color: white;
+}
+
+.search-bar:focus {
+    animation: blink-caret 1s steps(5, start) infinite;
+}
+
+@keyframes blink-caret {
+    from, to { color: transparent; }
+    50% { color: black; }
+}
+
+.search-button-container {
+    margin-top: 20px;
+    width: 100px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    border-radius: 20px; /* Adjust radius for rounded corners */
+    background-color: #007BFF;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    align-items: center;
 }
-.search-bar {
-    width: 300px; /* Width of the search bar */
-    padding: 10px; /* Padding inside the search bar */
-    border-radius: 5px; /* Rounds the corners */
-    border: 1px solid #ccc; /* Light border */
-    margin: 0 auto;
-}
+
 .search-button {
-    padding: 10px 15px; /* Padding for the button */
-    border: none; /* Removes default border */
-    border-radius: 5px; /* Rounds the corners */
-    background-color: #007BFF; /* Button color */
-    color: white; /* Text color */
-    cursor: pointer; /* Changes cursor to pointer on hover */
-    margin-left: 10px; /* Space between search bar and button */
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
 }
 
 
