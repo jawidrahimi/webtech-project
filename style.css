@@ -1,12 +1,19 @@
-/* background puzzle */
-body {
-    background-image: url('images/jigsaw_puzzle_frame_6_a_white.jpg'); /* Update with the correct path */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-color: rgba(0, 100, 200, 0.5); /* Semi-transparent blue */
-    background-blend-mode: overlay; /* Blend the color with the image */
-    margin: 0;
-    margin: 0; /* Removes default margin */
-    font-family: Arial, sans-serif; /* Sets a default font */
+header {
+    /* Existing header styles */
+    position: relative;
+    text-align: center; /* Center horizontally */
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+}
+
+.olac-logo {
+    height: 50px;
+    /* Add other styles as needed */
 }
 
 
@@ -29,9 +36,6 @@ body {
     border-radius: 2px; /* Rounds the edges of the lines */
     transition: all 0.3s ease; /* Smooth transition for animations */
 }
-
-
-
 /*dropdown for the navigation bar*/
 .dropdown-menu {
     display: none;
@@ -61,6 +65,20 @@ body {
 }
 .dropdown-menu li a:hover {
     background-color: #f0f0f0; /* Change background on hover */
+}
+
+
+
+
+/* background puzzle */
+body {
+    background-image: url('images/jigsaw_puzzle_frame_6_a_white.jpg'); /* Update with the correct path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-color: rgba(0, 100, 200, 0.5); /* Semi-transparent blue */
+    background-blend-mode: overlay; /* Blend the color with the image */
+    margin: 0;
+    margin: 0; /* Removes default margin */
+    font-family: Arial, sans-serif; /* Sets a default font */
 }
 
 
@@ -96,7 +114,7 @@ body {
     display: block; /* Change to block for centering */
     cursor: pointer;
     text-align: center; /* Center the image within the container */
-    margin-top: 20px; /* Add space between map and icon */
+    margin-top: 10px; /* Add space between map and icon */
 }
 
 .search-icon img {
