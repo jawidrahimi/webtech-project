@@ -1,46 +1,57 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl-NL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Archives</title>
+        <link rel="style" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
 
-<!-- File encoding -->
+    <body>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archive Page</title>
-    <link rel="stylesheet" href="stylesheet.css"> <!-- Link to CSS Stylesheet -->
-</head>
+        <header>
+            <div class="logo-container">
+                <a href="homepage.html"> <img src="images/olaclogo.gif" alt="OLAC Logo" class="olac-logo">
+                </a>
+            </div>
+        </header>
 
+        <nav id="dropdown-menu" class="dropdown-menu">
+            <ul>
+                <li><a href="homepage.html">Homepage</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="documents.html">Documents</a></li>
+            </ul>
+        </nav>
 
-<!-- Link to CSS Stylesheet -->
-<a href="http://www.language-archives.org/index.html">
-    <img src="images/Olac_logo.gif"OLAC Logo" class="logo">
-</a>
-
-<img src="images/Search_bar.png" alt="Search Bar" class="search-bar">
-
-
-<body>
+        <br> </br>
+        <br> </br>
+        <br> </br>
+        <br> </br>
 
     <div class="parallax-bg"></div>
 
     <div class="content">
         <h1>Archives Page</h1>
-        <p>OLAC has 64 participating archives. This page provides a summary; for full details on any archive follow the
-            links below!</p>
-
-        <head>
-            <link rel="stylesheet" href="stylesheet.css">
-        </head>
-
-        <!-- most important links-->
-        <body>
-            <p><a href="http://www.language-archives.org/register/register.php">Register an archive</a></p>
-            <p><a href="http://www.language-archives.org/register/archive_list.php">Machine readable list of registered
-                    archives</a></p>
-            <p><a href="http://www.language-archives.org/metrics/">Metrics report on all archives</a></p>
-            <p><a href="http://www.language-archives.org/metrics/compare">Comparative archive metrics</a></p>
-            <p><a href="http://www.language-archives.org/submission-policies.html">Archive submission policies</a></p>
-        </body>
+        <p>OLAC has 64 participating archives. This page provides a summary; for full details on any archive follow the links below!</p>
+    
+        <!-- Link to external stylesheet -->
+        <link rel="stylesheet" href="style.css">
+    
+        <!-- Most important links -->
+        <p><a href="http://www.language-archives.org/register/register.php">Register an archive</a></p>
+        <p><a href="http://www.language-archives.org/register/archive_list.php">Machine readable list of registered archives</a></p>
+        <p><a href="http://www.language-archives.org/metrics/">Metrics report on all archives</a></p>
+        <p><a href="http://www.language-archives.org/metrics/compare">Comparative archive metrics</a></p>
+        <p><a href="http://www.language-archives.org/submission-policies.html">Archive submission policies</a></p>
+    </div>
+    
 
 <!-- Lots and lots of copy pasted codes, links are intact!-->
  <!-- changed the cellspacing so that the lines are easier distinguishable-->

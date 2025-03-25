@@ -206,3 +206,25 @@ header {
     text-align: center; /* Centers the text */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
+
+.content {
+    text-align: center; /* Centreert de tekst en links horizontaal */
+    margin-top: 50px; /* Optioneel: Verplaatst de inhoud iets naar beneden */
+}
+
+.content p {
+    margin-bottom: 15px; /* Optioneel: Voegt wat ruimte tussen de paragrafen toe */
+}
+
+.content a {
+    color: #007bff; /* Kleur voor de links */
+    text-decoration: none; /* Verwijdert de onderstreping van de links */
+}
+
+.content a:hover {
+    text-decoration: underline; /* Voegt onderstreping toe wanneer je over de link zweeft */
+}
+
+.content p {
+    margin-bottom: 15px; /* Voegt ruimte tussen de paragrafen toe */
+}
