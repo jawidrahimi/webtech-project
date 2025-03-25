@@ -211,34 +211,44 @@ header {
 
 
 
-/* boxes for main content */
+/* Styling for main content boxes and links */
 .information-box {
     background-color: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
-    border-radius: 15px; /* Rounds the corners */
-    padding: 20px; /* Adds padding inside the box */
-    margin: 20px; /* Adds space around the box */
-    text-align: center; /* Centers the text */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Inner spacing */
+    margin: 20px; /* Outer spacing */
+    text-align: center; /* Centers text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
 }
 
 .content {
-    text-align: center; /* Centreert de tekst en links horizontaal */
-    margin-top: 50px; /* Optioneel: Verplaatst de inhoud iets naar beneden */
+    text-align: center; /* Centers text and links */
+    margin-top: 50px; /* Moves content slightly down */
 }
 
 .content p {
-    margin-bottom: 15px; /* Optioneel: Voegt wat ruimte tussen de paragrafen toe */
+    margin-bottom: 15px; /* Adds space between paragraphs */
 }
 
 .content a {
-    color: #007bff; /* Kleur voor de links */
-    text-decoration: none; /* Verwijdert de onderstreping van de links */
+    color: #007bff; /* Default link color */
+    text-decoration: none; /* Removes underline */
 }
 
 .content a:hover {
-    text-decoration: underline; /* Voegt onderstreping toe wanneer je over de link zweeft */
+    text-decoration: underline; /* Underline on hover */
 }
 
-.content p {
-    margin-bottom: 15px; /* Voegt ruimte tussen de paragrafen toe */
+/* Default link styling */
+a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none; /* No underline by default */
 }
+
+/* Link hover effect */
+a:hover {
+    color: blue; /* Changes color on hover */
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+

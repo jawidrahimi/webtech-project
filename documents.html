@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="nl-NL">
-    <head>
+
+<!-- All the CSS out of the CSS files -->
+    <head> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>OLAC Search</title>
@@ -25,6 +27,7 @@
         <br> </br>
         <br> </br>
 
+        <!-- The code from the original website -->
         <text>
             <td style="padding: 10pt"><br><h2>OLAC Documents</h2>
                 <table width="90%" cellpadding="5" align="center">
@@ -151,15 +154,13 @@
             </ul>
         </nav>
 
+<!-- script for making the links work -->
         <script>
             document.addEventListener("DOMContentLoaded", function () {
-                // Zorg ervoor dat dit script alleen de links in documents.html beïnvloedt
                 if (window.location.pathname.includes("documents.html")) {
                     document.querySelectorAll('a').forEach(link => {
                         let href = link.getAttribute("href");
-                        // Controleer of de href begint met een slash of niet
                         if (href && !href.startsWith("http")) {
-                            // Als het een relatieve URL is, voeg de basis-URL en de slash toe
                             link.href = "http://www.language-archives.org" + (href.startsWith("/") ? href : "/" + href);
                         }
                     });

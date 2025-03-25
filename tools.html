@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<!-- spome comments appear to  be broken, but they are also broken on the original website so yeah-->
+ <!-- All the CSS out of the CSS files -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <a href="homepage.html"> <img src="images/olaclogo.gif" alt="OLAC Logo" class="olac-logo">
+            </a>
+        </div>
+    </header>
+
+    <nav id="dropdown-menu" class="dropdown-menu">
+        <ul>
+            <li><a href="homepage.html">Homepage</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="documents.html">Documents</a></li>
+        </ul>
+    </nav>
+
+    <br> </br>
+    <br> </br>
+    <br> </br>
+    <br> </br>
+
+    <!-- The code from the original website -->
+    <table width="100%" cellspacing="20">
+        <tbody>
+            <tr>
+                <td width="50%">
+
+                    <H2> Tool Page</H2>
+
+                    <p><i>The OLAC Tool Page is a platform that provides essential tools for registering, managing, and
+                            researching language documents and archives. It is designed to give users access to various
+                            resources and features that help in managing language materials. The page includes important
+                            links to different sections, such as archive registration, machine-readable lists of
+                            registered archives, metrics reports, and submission policies. These tools aim to support
+                            the organization and dissemination of linguistic data in a user-friendly manner.</i>
+
+                    </p>
+                    <h2>Get all OLAC Metadata</h2>
+
+                    <p>
+                    </p>
+                    <li><a href="/xmldump/ListRecords.xml.gz">Nightly dump of all OLAC records in OLAC XML format,
+                            gzipped</a>
+                    </li>
+                    <li><a href="/static/olac-datahub.rdf.gz">Nightly dump of all OLAC records in RDF/XML format,
+                            gzipped</a>
+                    </li>
+                    <li><a href="/cgi-bin/olaca3.pl">An OAI data provider containing all OLAC records</a>
+
+                        <h2>Data Providers</h2>
+
+                        <p>
+                        </p>
+                    </li>
+                    <li><a href="tools/faq.html">OLAC Implementers' FAQ</a>
+                    </li>
+                    <li><a href="/register/register.php">Validate/Register an OLAC Data Provider</a>
+                    </li>
+                    <li><a href="http://re.cs.uct.ac.za/cgi-bin/Explorer/2.0-1.46/testoai">Interact with a data provider
+                            using the OAI Repository Explorer</a>
+                    </li>
+                    <li><a href="http://re.cs.uct.ac.za/cgi-bin/Explorer/2.0-1.46/addarchive">Test the conformance of a
+                            repository using the OAI Repository Explorer</a>
+                    </li>
+                    <li><a href="tools/survey.php">OLAC Metadata usage survey</a>
+                    </li>
+                    <li><a href="/sr">OLAC Static Repository Gateway</a> - providing an OAI interface to repositories
+                        published as an XML file
+                    </li>
+                    <li><a
+                            href="https://sourceforge.net/project/showfiles.php?group_id=6577&amp;package_id=200507&amp;release_id=439285">Convert
+                            BibTeX file to OLAC Static Repository</a>
+                    </li>
+                    <li><a href="http://www.openarchives.org/pmh/tools/tools.php">OAI Tools</a>
+                    </li>
+                    <li><a href="http://code.google.com/p/olac/source/browse/#svn/src/data_providers/ailla_php">Sample
+                            data provider for AILLA (PHP)</a>
+
+                        <h2>OLAC Metadata Schema</h2>
+
+                        <p>
+                        </p>
+                    </li>
+                    <li><a href="OLAC/1.1/olac.xsd">olac.xsd</a> - OLAC Metadata Schema 1.1
+                    </li>
+                    <li><a href="OLAC/1.1/olac.xml">olac.xml</a> - Example OLAC document
+                    </li>
+                    <li><a href="OLAC/1.1/olac.dtd">olac.dtd</a> - OLAC DTD
+                    </li>
+                    <li><a href="tools/metadata/freestanding.html">Free-standing OLAC Metadata</a>
+                        - check validity and display a single OLAC record
+                        <!--
+            <li><a href="tools/xsl/olac_to_dc-2.0.xsl">olac_to_dc_2.0.xsl</a>
+              - OLAC to DC XSL transform
+            -->
+                    </li>
+                    <li><a href="OLAC/metadata.html">OLAC Metadata</a> - Human readable
+                        format definition
+                    </li>
+                    <li><a href="REC/olac-extensions.html">Recommended Metadata Extensions</a>
+                        - Vocabularies for language resource description
+                    </li>
+                    <li><a href="http://listserv.linguistlist.org/archives/metadata.html">METADATA</a>
+                        - Discussion list for OLAC Metadata
+
+                        <p>OLAC metadata can be stored in a relational database.
+                            Here is the schema used by all OLAC services:
+                            <a
+                                href="https://github.com/olac/olac/blob/master/system/olacdb/olac_schema.sql">olac_schema.sql</a>.
+
+                            <!--
+            <h2>OLAC Service Providers</h2>
+            
+            <p>
+            Anyone can set up a service provider which harvests OLAC archives and
+            provides some useful service, such as cross-archive searching.  Service
+            providers may give added value for a particular subdomain, e.g. just
+            harvesting lexicons, or just harvesting Asian language resources.
+            The OLAC harvester is open source code which harvests all OLAC archives
+            and stores the records in a MySQL database.  Add a useful web interface
+            to create a new OLAC service provider.  If you don't want to bother
+            harvesting dozens of archives, you can harvest a single OLAC archive,
+            the <i>OLAC Aggregator</i>, which contains the union of all other OLAC
+            archives.
+            
+            <li>Software for <a href="http://code.google.com/p/olac/wiki/RunningOLACHarvester">harvester</a> and <a href="http://code.google.com/p/olac/source/browse/#svn/src/olac_suite">aggregator</a>
+            <li><a href="http://code.google.com/p/olac/source/browse/">Browse 
+            the Subversion repository</a>
+            <li><a href="register/service.html">Register an OLAC Service Provider</a>
+            <li><a href="services.php">View registered OLAC Service Providers</a>
+            -->
+
+                        </p>
+                        <h2>OLAC Logo</h2>
+
+                        <p>
+                            Please make use of the <a href="/logo.html">OLAC Logo</a> on your
+                            site, and link it to www.language-archives.org.
+
+                        </p>
+                    </li>
+                </td>
+                <td width="50%">
+
+                    <h2>Simple search for OLAC records</h2>
+
+                    <p>
+                        Enter a single search term, to be matched against any OLAC field:
+
+                    </p>
+                    <form action="/tools/search/search.php" method="get">
+                        <input type="text" size="16" maxlength="24" name="query" value="">
+                        <input type="submit">
+                    </form>
+
+                    <h2>Look up an OLAC item</h2>
+
+                    <p>
+                        Enter the OAI identifier for a record in any OLAC archive:
+
+                    </p>
+                    <p>
+                    </p>
+                    <form name="lookupform"
+                        action="javascript:window.location.href='/item/'+document.lookupform.identifier.value;">
+                        <input type="text" size="16" maxlength="80" name="identifier" value="">
+                        <input type="submit">
+                    </form>
+
+                    <h2>List records from an OLAC archive</h2>
+
+                    <p>
+                        Enter the OAI identifier for any OLAC archive (submit a blank query to
+                        see a list of archives).
+
+                    </p>
+                    <form action="/archive_records" method="get">
+                        <input type="text" size="16" maxlength="80" name="archive" value="">
+                        <input type="submit">
+                    </form>
+
+                    <h2>OLAC-Implementers Mailing List</h2>
+
+                    <p>OLAC-Implementers is an unmoderated list for technical discussions
+                        concerning the implementation of OLAC repositories
+                        (<a href="http://lists.linguistlist.org/archives/olac-implementers.html">LIST ARCHIVES</a>).
+
+                    </p>
+                    <p>
+                    </p>
+                    <form action="http://lists.linguistlist.org/cgi-bin/wa">
+                        <font size="-1">
+                            <input type="hidden" name="SUBED2" value="OLAC-IMPLEMENTERS">
+                            <input type="hidden" name="A" value="1">
+                            NAME:<br>
+                            <input name="p" size="30" maxlength="60" value=""><input type="hidden" name="q"
+                                value=""><br>
+                            EMAIL:<br>
+                            <input name="s" size="30" maxlength="60" value=""><input type="hidden" name="t"
+                                value=""><br>
+                            <input type="hidden" name="0" value="">
+                            <input type="hidden" name="1" value="">
+                            <input type="hidden" name="2" value="">
+                            <input type="submit" name="b" value="Subscribe to OLAC-Implementers">
+                        </font>
+                    </form>
+
+                    <h2>OAI and DCMI Documents</h2>
+
+                    <p>
+                        OLAC is based on the
+                        <a href="http://www.openarchives.org/">Open Archives Initiative</a>
+                        and the <a href="http://dublincore.org/">Dublin Core Metadata Initiative</a>.
+                        Several OAI and DCMI documents are relevant to OLAC:
+
+                    </p>
+                    <p>
+                    </p>
+                    <li><a href="http://library.cern.ch/HEPLW/4/papers/3/">Exposing
+                            and Harvesting Metadata Using the
+                            OAI Metadata Harvesting Protocol: A Tutorial</a>
+                    </li>
+                    <li><a href="http://www.openarchives.org/OAI/openarchivesprotocol.html">OAI
+                            Protocol for Metadata Harvesting</a>
+                    </li>
+                    <li><a href="http://www.openarchives.org/documents/oai.pdf">The
+                            OAI: Building a low-barrier interoperability framework</a>
+                    </li>
+                    <li><a href="http://dublincore.org/documents/dces/">Dublin Core Element Set</a>
+                    </li>
+                    <li><a href="http://www.openarchives.org/documents/index.html">More
+                            OAI documents...</a>
+
+                        <h2>Useful Resources</h2>
+
+                        <ul>
+                            <li> Language Codes:
+                                <a href="http://www.ethnologue.com/codes/">Ethnologue tables</a>
+                                | <a href="http://www.sil.org/iso639-3/download.asp">ISO 639-3 tables</a>
+                            </li>
+                            <li> OAI:
+                                <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm">Protocol</a>
+                                | <a href="http://library.cern.ch/HEPLW/4/papers/3/">tutorial</a>
+                                | <a href="http://www.openarchives.org/documents/FAQ.html">FAQ</a>
+                                | <a href="http://www.openarchives.org/tools/">tools</a>
+                                | <a href="http://www.openarchives.org/data/registerasprovider.html">Registration</a>
+                            </li>
+                            <li> <a href="http://dublincore.org/documents/dces/">Dublin Core Element Set</a>
+                            </li>
+                            <li> Repository Explorer:
+                                <!--
+              <a href="http://oai.dlib.vt.edu/~oai/cgi-bin/Explorer/oai1.1/testoai">1.1</a>| <a href="http://oai.dlib.vt.edu/~oai/cgi-bin/Explorer/oai2.0/testoai">2.0</a>
+            -->
+                                <a href="http://re.cs.uct.ac.za/">1.0/1.1/2.0</a>
+                            </li>
+                            <li> XML Schema:
+                                <a href="http://www.w3.org/XML/Schema">XML Schema</a>
+                                | <a href="http://www.w3.org/TR/xmlschema-0/">W3C Primer</a>
+                                | <a href="http://www.xml.com/pub/a/2000/11/29/schemas/part1.html">XML.com Tutorial</a>
+                                | <a href="http://www.oasis-open.org/cover/schemas.html">Resources at OASIS</a>
+                                | <a href="http://www.w3.org/2001/03/webdata/xsv">XSV Schema Validator</a>
+                                | <a href="http://www.ltg.ed.ac.uk/~ht/xsv-status.html">XSV Status</a>
+                                | <a href="/tools/xsv/">Xerces-J Schame Validator</a>
+                            </li>
+                        </ul>
+
+                        <!-- FOOTER -->
+                    </li>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- script for making the links work -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.location.pathname.includes("tools.html")) {
+                document.querySelectorAll('a').forEach(link => {
+                    let href = link.getAttribute("href");
+                    if (href && !href.startsWith("http")) {
+                        link.href = "http://www.language-archives.org" + (href.startsWith("/") ? href : "/" + href);
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

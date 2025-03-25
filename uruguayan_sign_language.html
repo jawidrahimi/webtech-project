@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<!-- All the CSS out of the CSS files -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Archives</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <header>
+            <div class="logo-container">
+                <a href="homepage.html"> <img src="images/olaclogo.gif" alt="OLAC Logo" class="olac-logo">
+                </a>
+            </div>
+        </header>
+
+        <nav id="dropdown-menu" class="dropdown-menu">
+            <ul>
+                <li><a href="homepage.html">Homepage</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="documents.html">Documents</a></li>
+            </ul>
+        </nav>
+
+        <br> </br>
+        <br> </br>
+        <br> </br>
+        <br> </br>
+
+        <!-- The code from the original website -->
+            <table class="doc_header">
+                <tbody><tr>
+                    <td class="doc_header_logobox">
+                    </td>
+                    <h2>Page for Uruguayan sign language</h2>
+                    <td>OLAC resources in and about the Uruguayan Sign Language</td>
+                </tr>
+            </tbody></table>
+            
+            <p>ISO 639-3:
+            <a href="http://www-01.sil.org/iso639-3/documentation.asp?id=ugy">
+            ugy</a>
+            </p>
+            
+            <p>
+            The combined catalog of all OLAC participants contains the following resources that are relevant to this language:</p>
+            <ul>
+            <li><a href="#language_descriptions">Language descriptions</a></li><li><a href="#other_resources1">Other resources about the language</a></li></ul>
+            
+            <p>Other known names and dialect names:  Lengua de Señas Uruguaya,  LSU</p><p>Use faceted search to <a href="http://search.language-archives.org/search.html?q=Uruguayan+Sign+Language">explore resources for Uruguayan Sign Language</a>.</p><a name="language_descriptions"></a><h2>Language descriptions</h2><ol><li><span class="online_indicator">ONLINE</span><i>Glottolog 5.1 Resources for Uruguayan Sign Language.</i> n.a. 2024. Max Planck Institute for Evolutionary Anthropology.
+             <a href="/item/oai:glottolog.org:urug1238">oai:glottolog.org:urug1238</a></li></ol><a name="other_resources1"></a><h2>Other resources about the language</h2><ol><li><span class="online_indicator">ONLINE</span><i>Uruguayan Sign Language: a language of Uruguay.</i> n.a. 2018. SIL International.
+             <a href="/item/oai:ethnologue.com:ugy">oai:ethnologue.com:ugy</a></li><li><span class="online_indicator">ONLINE</span><i>LINGUIST List Resources for Uruguayan Sign Language.</i> Damir Cavar, eLinguistics Foundation Board Member (editor); Malgorzata E. Cavar, Director of Linguist List (editor). 2022-05-31. The LINGUIST List (www.linguistlist.org).
+             <a href="/item/oai:linguistlist.org:lang_ugy">oai:linguistlist.org:lang_ugy</a></li><li><span class="online_indicator">ONLINE</span><i>Americas Area Sign Language Survey Report Video Summaries in American Sign Language - Uruguay.</i> Parks, Elizabeth. 2012. SIL International.
+             <a href="/item/oai:sil.org:50133">oai:sil.org:50133</a></li><li><span class="online_indicator">ONLINE</span><i>The Uruguayan Deaf Community.</i> Parks, Elizabeth; Williams, Holly. 2013. SIL International.
+             <a href="/item/oai:sil.org:55239">oai:sil.org:55239</a></li></ol><p>Other known names and dialect names:  Lengua de Señas Uruguaya,  LSU</p><p>Other search terms: dialect, vernacular, grammar, syntax, morphology, phonology, orthography</p>
+            <hr>
+            <div class="timestamp">
+            http://www.language-archives.org/language.php/ugy<br>
+            Up-to-date as of: Tue Mar 25 1:00:28 EDT 2025</div>
+
+<!-- script for making the links work -->
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    document.querySelectorAll('a').forEach(link => {
+                        let href = link.getAttribute("href");
+                        if (href && href.startsWith("/item/")) {
+                            link.href = "http://www.language-archives.org" + href;
+                        }
+                    });
+                });
+            </script>
+            
+            
+            
+            
+    </body>
+</html>
