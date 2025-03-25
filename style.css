@@ -1,3 +1,15 @@
+/* Styles all heading elements */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif; 
+    font-size: 30px; 
+}
+
+/* Sets the default font for the body */
+body {
+    font-family: 'Georgia', serif; 
+    font-size: 18px; 
+}
+
 /* background puzzle */
 body {
     background-image: url('images/jigsaw_puzzle_frame_6_a_white.jpg'); /* Update with the correct path */
@@ -20,6 +32,7 @@ header {
     top: 40px; /* Adjust as needed */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust for perfect centering */
+    z-index: inherit;
 }
 
 .olac-logo {
@@ -28,6 +41,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 
 
 /* navigation bar */
@@ -91,25 +105,26 @@ header {
     flex-direction: column;
     align-items: center; /* Center horizontally */
     justify-content: center; /* Center vertically */
+    padding: 10px;
 }
 
 /* Map container */
 .map-container {
     width: 50%; /* Adjust as needed */
     max-width: 1200px; /* Optional: Limit maximum width */
-    text-align: center; /* Center the image within the container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 /* World map image */
 .world-map {
     width: 100%; /* Make the image responsive */
     display: block; /* Remove extra space below inline images */
-    margin: 0 auto; /* Center the image if needed, but the container should handle it. */
+    margin: 25px auto; /* Center the image if needed, but the container should handle it. */
 }
 
 
-
-/* Search icon */
+/* Search icon on the homepage*/
 .search-icon {
     display: flex; /* Use flexbox for easy centering */
     justify-content: center; /* Center horizontally */
@@ -119,7 +134,6 @@ header {
     border-radius: 50%; /* Make it a circle */
     background-color: rgba(0, 0, 0, 0.2); /* Add a background color */
     cursor: pointer;
-    margin: 10px auto; /* Center the icon */
 }
 
 .search-icon img {
