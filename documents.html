@@ -1,38 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documents Page</title>
-    <link rel="stylesheet" href="stylesheet.css"> <!-- Link to CSS file -->
-</head>
-<body>
+<html lang="nl-NL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OLAC Search</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+        <header>
+            <div class="logo-container">
+                <a href="homepage.html"> <img src="images/olaclogo.gif" alt="OLAC Logo" class="olac-logo">
+                </a>
+            </div>
+        </header>
 
-    <!-- Background -->
-    <div class="parallax-bg"></div>
+        <br> </br>
+        <br> </br>
+        <br> </br>
 
-    <!-- OLAC Logo (top-left, clickable) -->
-    <a href="http://www.language-archives.org/index.html">
-        <img src="images/Olac_logo.gif" alt="OLAC Logo" class="logo">
-    </a>
+        <text>
+            <td style="padding: 10pt"><br><h2>OLAC Documents</h2>
+                <table width="90%" cellpadding="5" align="center">
+                <tbody><tr>
+                <td colspan="2">
+                <p>This index lists all documents that are current within the OLAC document process. They are listed by type. See also <a href="documents_by_status.html">OLAC documents by status</a> and <a href="documents_by_date.html">OLAC documents by date</a>, which include documents that have been retired or withdrawn.</p>
+                </td>
+                </tr>
+                <tr valign="top">
+                <td>
+                <h4 style="margin-left: 18pt"><a href="#Standards">Standards</a></h4>
+                </td>
+                <td>OLAC Standards specify how the Open Language Archives Community operates.</td>
+                </tr>
+                <tr valign="top">
+                <td>
+                <h4 style="margin-left: 18pt"><a href="#Recommendations">Recommendations</a></h4>
+                </td>
+                <td>OLAC Recommendations express the consensus of members of the Open Language Archives Community regarding various aspects of language resource archiving.</td>
+                </tr>
+                <tr valign="top">
+                <td>
+                <h4 style="margin-left: 18pt"><a href="#Notes">Notes</a></h4>
+                </td>
+                <td>OLAC Notes offer background information and helps for implementors of language archives.</td>
+                </tr>
+                <tr>
+                <td colspan="2">
+                <p><small>N.B. See the <a href="OLAC/process.html">OLAC Process</a> document for an explanation of the document types, status levels, and review process.</small></p>
+                </td>
+                </tr>
+                </tbody></table>
+                </td>
 
-    <!-- Search Bar (top-right, not clickable) -->
-    <img src="images/Search_bar.png" alt="Search Bar" class="search-bar">
+                <td style="padding: 10pt">
+                    <h2 align="center"><a name="Standards"></a>Standards</h2>
+                    <p style="margin-left: 15pt"><a href="OLAC/metadata.html">OLAC Metadata</a>&nbsp;&nbsp;[2008-05-31]</p>
+                    <blockquote><i>Standard. </i>This document defines the format used by the Open Language Archives Community
+                                   OLAC for the interchange of metadata within the framework of the
+                                Open Archives Initiative OAI. The metadata set is based on the
+                                complete set of Dublin Core metadata terms DCMT, but the format
+                                allows for the use of extensions to express community-specific qualifiers.
+                             </blockquote>
+                    <p style="margin-left: 15pt"><a href="OLAC/process.html">OLAC Process</a>&nbsp;&nbsp;[2006-04-05]</p>
+                    <blockquote><i>Standard. </i>This document summarizes the governing ideas of OLAC (i.e. the
+                              purpose, vision, and core values) and then describes how OLAC is organized and
+                              how it operates.</blockquote>
+                    <p style="margin-left: 15pt"><a href="OLAC/repositories.html">OLAC Repositories</a>&nbsp;&nbsp;[2008-07-28]</p>
+                    <blockquote><i>Standard. </i>This document defines the standards OLAC archives must follow in implementing a metadata repository. </blockquote>
+                    <h2 align="center"><a name="Recommendations"></a>Recommendations</h2>
+                    <p style="margin-left: 15pt"><a href="REC/bpr.html">Best Practice Recommendations for Language Resource Description</a>&nbsp;&nbsp;[2008-07-11]</p>
+                    <blockquote><i>Recommendation. </i>This document expresses the consensus of the Open Language Archives Community on best
+                                practice recommendations for language resource description using the OLAC metadata
+                                standard OLAC-Metadata.</blockquote>
+                    <p style="margin-left: 15pt"><a href="REC/discourse.html">OLAC Discourse Type Vocabulary</a>&nbsp;&nbsp;[2012-02-04]</p>
+                    <blockquote><i>Recommendation. </i> This document specifies the codes, or controlled vocabulary, for the Discourse Type
+                                extension of the Type metadata element. These codes describe the content of a resource
+                                as structured in such a way as to represent a particular type of discourse. </blockquote>
+                    <p style="margin-left: 15pt"><a href="REC/language.html">OLAC Language Extension</a>&nbsp;&nbsp;[2008-02-22]</p>
+                    <blockquote><i>Recommendation. </i> This document specifies the metadata extension used by OLAC to uniquely identify
+                                languages. It uses the three-letter identifiers of ISO 639-3 as its controlled
+                                vocabulary. </blockquote>
+                    <p style="margin-left: 15pt"><a href="REC/type.html">OLAC Linguistic Data Type Vocabulary</a>&nbsp;&nbsp;[2006-04-06]</p>
+                    <blockquote><i>Recommendation. </i>
+                                  This document specifies the codes, or controlled vocabulary, for the Linguistic Data Type extension of the DCMI Type element. These codes describe the content of a resource from the standpoint of recognized structural types of linguistic information. 
+                        </blockquote>
+                    <p style="margin-left: 15pt"><a href="REC/field.html">OLAC Linguistic Subject Vocabulary</a>&nbsp;&nbsp;[2006-04-06]</p>
+                    <blockquote><i>Recommendation. </i>This document specifies the codes, or suggested vocabulary, for the 'linguistic' value of the xsi:type attribute of the OLAC Subject element. These codes describe the content of a resource as about a particular subfield of linguistic science, or about the level of linguistic structure which is the primary concern of a given subfield. </blockquote>
+                    <p style="margin-left: 15pt"><a href="REC/role.html">OLAC Role Vocabulary</a>&nbsp;&nbsp;[2006-04-06]</p>
+                    <blockquote><i>Recommendation. </i>Role is an attribute of both the Creator and Contributor elements. (Please note that Dublin
+                          Core now discourages the use of the Creator element, recommending that all Role information be
+                          associated with Contributor elements.) This document specifies the controlled vocabulary of the 
+                          Role attribute used by OLAC. This attribute specifies the functional role of the entity named
+                          in the creation of a given resource.</blockquote>
+                    <p style="margin-left: 15pt"><a href="REC/olac-extensions.html">Recommended metadata extensions</a>&nbsp;&nbsp;[2008-02-22]</p>
+                    <blockquote><i>Recommendation. </i>This document lists all the metadata extensions that are recommended by the
+                                Open Language Archives Community for use in describing language resources.
+                                </blockquote>
+                    <h2 align="center"><a name="Notes"></a>Notes</h2>
+                    <p style="margin-left: 15pt"><a href="NOTE/query.html">A query facility for selective harvesting of OLAC metadata</a>&nbsp;&nbsp;[2003-07-29]</p>
+                    <blockquote><i>Draft Implementation Note. </i>Documents a verb, Query, supported by the CGI interface to the OLAC Aggregator. The purpose of the verb is to support selective harvesting of OLAC metadata, such as would be needed in order to offer a  specialized service based on OLAC metadata. The  request returns a ListRecords response; its parameters support the construction of an SQL query to specify the subset of records to harvest.</blockquote>
+                    <p style="margin-left: 15pt"><a href="NOTE/toolbox.html">Creating OLAC Records and Repositories in Toolbox</a>&nbsp;&nbsp;[2006-09-28]</p>
+                    <blockquote><i>Draft Implementation Note. </i>This Note presents a framework for creating OLAC static repositories from a collections of records created and maintained as a Toolbox database.</blockquote>
+                    <p style="margin-left: 15pt"><a href="NOTE/metrics.html">OLAC Metadata Metrics</a>&nbsp;&nbsp;[2009-06-29]</p>
+                    <blockquote><i>Informational Note. </i>Explains the metrics that are implemented on the OLAC web site for summarizing the
+                                    coverage of the participating archives and for evaluating the quality of their
+                                    metadata records.</blockquote>
+                    <p style="margin-left: 15pt"><a href="NOTE/usage.html">OLAC Metadata Usage Guidelines</a>&nbsp;&nbsp;[2008-07-11]</p>
+                    <blockquote><i>Informational Note. </i>This document provides guidelines on the meaning and proper usage of the metadata elements used in the
+                                metadata standard of the Open Language Archives Community.</blockquote>
+                    <p style="margin-left: 15pt"><a href="NOTE/olac_display.html">Specifications for the OLAC metadata display format and
+                                the OLAC-to-OAI_DC crosswalk</a>&nbsp;&nbsp;[2009-07-23]</p>
+                    <blockquote><i>Proposed Informational Note. </i>In addition to the olac metadata format, the
+                                    OLAC Aggregator OLACA serves records in two
+                                    other formats: olac_display and
+                                        oai_dc. This document provides the
+                                    specification for how an OLAC record is transformed
+                                    into these other two formats. The first of these
+                                    formats is a reader-friendly view of OLAC metadata
+                                    that may be used by someone building a service that
+                                    displays OLAC metadata; it translates coded values
+                                    into their human-readable equivalents. The latter
+                                    format is the standard format used by the Open
+                                    Archives Initiative (OAI) for metadata interchange.
+                                    Thus the OLAC Aggregator
+                                    serves as a crosswalk that transforms the
+                                        olac format records supplied by OLAC's
+                                    participating archives to oai_dc format
+                                    records that can be used by the wider OAI
+                                    community.</blockquote>
+                    <p style="margin-left: 15pt"><a href="NOTE/third-party-extensions.html">Third Party Extensions</a>&nbsp;&nbsp;[2002-12-04]</p>
+                    <blockquote><i>Draft Informational Note. </i>This document lists third-party metadata extensions that are known
+                    to be compatible with the OLAC Metadata standards.  They have not attained the status of OLAC Recommendations, but data providers are encouraged to try any that seem relevant to the nature of their collection.</blockquote>
+                    <p style="margin-left: 15pt"><a href="NOTE/viser.html">Viser: A virtual service provider for displaying selected OLAC metadata</a>&nbsp;&nbsp;[2003-07-29]</p>
+                    <blockquote><i>Draft Implementation Note. </i>Documents a service named Viser, hosted on the OLAC web site, that allows language resource sites to post services based on OLAC metadata without having to implement a conventional service provider. Viser works in conjunction with the query facility of the OLAC Aggregator to selectively harvest OLAC metadata and then provide HTML displays of records that match a query. The  service returns an XML document with processing instructions to invoke an XSL stylesheet and set certain display parameters; the actual rendering to HTML happens in the client's browser.</blockquote>
+                    </td>
+        </text>
 
-    <!-- Main Content -->
-    <div class="content">
-        <h1>Documents Page</h1>
-        <p>Hello, welcome to the archive.</p>
-    </div>
+        <nav id="dropdown-menu" class="dropdown-menu">
+            <ul>
+                <li><a href="homepage.html">Homepage</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="documents.html">Documents</a></li>
+            </ul>
+        </nav>
 
-    <!-- JavaScript for parallax background effect -->
-<script>
-    document.addEventListener("scroll", function () {
-        let scrollPos = window.scrollY;
-        document.querySelector(".parallax-bg").style.backgroundPosition = `center ${scrollPos * 0.5}px`;
-    });
-</script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Zorg ervoor dat dit script alleen de links in documents.html beïnvloedt
+                if (window.location.pathname.includes("documents.html")) {
+                    document.querySelectorAll('a').forEach(link => {
+                        let href = link.getAttribute("href");
+                        // Controleer of de href begint met een slash of niet
+                        if (href && !href.startsWith("http")) {
+                            // Als het een relatieve URL is, voeg de basis-URL en de slash toe
+                            link.href = "http://www.language-archives.org" + (href.startsWith("/") ? href : "/" + href);
+                        }
+                    });
+                }
+            });
+        </script>
+        
+        
 
-
-</body>
-</html>
+    </body>
+    </html>
