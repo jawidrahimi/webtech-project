@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents Page</title>
+    <link rel="stylesheet" href="stylesheet.css"> <!-- Link to CSS file -->
+</head>
+<body>
+
+    <!-- Background -->
+    <div class="parallax-bg"></div>
+
+    <!-- OLAC Logo (top-left, clickable) -->
+    <a href="http://www.language-archives.org/index.html">
+        <img src="images/Olac_logo.gif" alt="OLAC Logo" class="logo">
+    </a>
+
+    <!-- Search Bar (top-right, not clickable) -->
+    <img src="images/Search_bar.png" alt="Search Bar" class="search-bar">
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Documents Page</h1>
+        <p>Hello, welcome to the archive.</p>
+    </div>
+
+    <!-- JavaScript for parallax background effect -->
+<script>
+    document.addEventListener("scroll", function () {
+        let scrollPos = window.scrollY;
+        document.querySelector(".parallax-bg").style.backgroundPosition = `center ${scrollPos * 0.5}px`;
+    });
+</script>
+
+
+</body>
+</html>
