@@ -244,8 +244,8 @@ header {
 
 /* Search result boxes for search interface */
 .search-results-container {
-    padding: 0 20px; 
-    width: 100%; 
+    padding: 0 20px;
+    width: 100%;
     box-sizing: border-box; /* Include padding in width */
 }
 
