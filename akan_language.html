@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Olac model of Akan</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <style>
+            main {
+                padding-top: 100px; /* Adjust as needed based on header height */
+                padding-left: 20px; /* Add considerable left padding */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <header>
+            <div class="logo-container">
+                <a href="homepage.html"> <img src="images/olaclogo.gif" alt="OLAC Logo" class="olac-logo">
+                </a>
+            </div>
+        </header>
+        <nav id="dropdown-menu" class="dropdown-menu">
+            <ul>
+                <li><a href="homepage.html">Homepage</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="documents.html">Documents</a></li>
+            </ul>
+        </nav>
+        <main>
+            <table class="doc_header">
+                <tbody>
+                    <tr>
+                        <td class="doc_header_logobox"></td>
+                        <h2>Page for Akan</h2>
+			<h3>Introduction to the Akan Language</h3>
+
+			<p>
+        The Akan language is a member of the Kwa language family, which is a branch of the larger Niger-Congo language family. It is spoken primarily in Ghana and Côte d'Ivoire by the Akan people. Akan is widely used as a lingua franca in these regions, particularly in Ghana, where it serves as one of the country's most prominent languages.
+			</p>
+			<p>
+        The language has several dialects, including Twi, Fante, and Akuapem, which are mutually intelligible. Akan is an important language for communication, culture, and education in Ghana, with millions of speakers. It has a rich oral tradition, which includes storytelling, music, and proverbs that reflect the history and values of the Akan people.
+    </p>
+    <p>
+        Akan employs a system of tonal distinctions, which means that the meaning of a word can change depending on its tone. The language is also written using the Latin alphabet, and it has a significant body of literature, both oral and written, including books, poems, and songs. In addition to its cultural significance, Akan plays a key role in the social and political life of Ghana and the broader Akan-speaking community.
+    </p>
+			<td><b>OLAC resources for Akan</b></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                ISO 639:
+                <a href="https://iso639-3.sil.org/code/eng">nya</a>
+            </p>
+            <p>
+                The combined catalog of all OLAC participants contains the following resources that are relevant to the Akan Language
+            </p>
+            <ul>
+                <li><a href="#language_descriptions">Language descriptions</a></li>
+                <li><a href="#other_resources1">Other resources about the language</a></li>
+            </ul>
+            <p>Language used in: Ghana, Africa</p>
+            <a name="language_descriptions"></a>
+            <h2>Language descriptions</h2>
+                    <a href="http://olac.ldc.upenn.edu/item/oai:wals.info:akn">Open Archives Initiative Protocol for Metadata Harvesting</a>
+		    <hr />
+		    <div class="timestamp">
+		      http://www.language-archives.org/language.php/akan<br />
+		      Up-to-date as of: Tue Mar 25 21:04:23 EDT 2025
+		    </div>
+        </main>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                document.querySelectorAll('a').forEach(link => {
+                    let href = link.getAttribute("href");
+                    if (href && href.startsWith("/item/")) {
+                        link.href = "http://www.language-archives.org" + href;
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
