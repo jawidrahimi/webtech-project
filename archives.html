@@ -9,7 +9,7 @@
         <link rel="style" href="style.css">
         <script src="script.js" defer></script>
     </head>
-
+<!-- code for the hamburger menu, improvement from the original website(now has moving parts). -->
     <body>
         <div class="hamburger-menu" onclick="toggleMenu()">
             <div class="line"></div>
@@ -36,13 +36,14 @@
                 <li><a href="services.html" data-exempt="true">Services</a></li> 
             </ul>
         </nav>
-
+<!-- "data exempt" code was written because the javascript code that fixes the links -->
+         <!-- was interfering with the hamburger menu code -->
         <br> </br>
         <br> </br>
         <br> </br>
         <br> </br>
 
-    <div class="parallax-bg"></div>
+    <!-- main text, not much improvement, we did not want to change the information too much, only the style -->
 
     <div class="content">
         <h1>Archives Page</h1>
@@ -1113,6 +1114,8 @@
         </p>   
 
 <!-- script so that the links work, they did not work before-->
+ <!-- We tried a lot of things to make the links work again. we settled on this script.  -->
+    <!-- We got inspiration from this source: https://www.geeksforgeeks.org/how-to-redirect-to-a-relative-url-in-javascript/ -->
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 document.querySelectorAll('a.arch').forEach(link => {

@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>OLAC resources in and about the Uruguayan sign language</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js" defer></script>
+        <!-- Linking the file to the style.css file -->
+        <link rel="stylesheet" href="style.css"> 
+        <script src="script.js" defer></script> 
         <style>
             main {
                 padding-top: 100px; /* Adjust as needed based on header height */
@@ -13,24 +14,29 @@
             }
         </style>
     </head>
-    <body>
+
+    <!-- code for the hamburger menu, improvement from the original website(now has moving parts). -->
+    <body> 
         <div class="hamburger-menu" onclick="toggleMenu()">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
+        <!-- with this code, we can navigate from anywhere, to everywhere  -->
         <nav id="dropdown-menu" class="dropdown-menu">
             <ul>
                 <li><a href="homepage.html" data-exempt="true">Homepage</a></li>
                 <li><a href="about.html" data-exempt="true">About</a></li>
                 <li><a href="documents.html" data-exempt="true">Documents</a></li>
-                <li><a href="tools.html" data-exempt="true">Tools</a></li> <!-- Toegevoegd -->
-                <li><a href="news.html" data-exempt="true">News</a></li> <!-- Toegevoegd -->
-                <li><a href="archives.html" data-exempt="true">Archives</a></li> <!-- Toegevoegd -->
-                <li><a href="organisation.html" data-exempt="true">Organisation</a></li> <!-- Toegevoegd -->
-                <li><a href="services.html" data-exempt="true">Services</a></li> <!-- Toegevoegd -->
+                <li><a href="tools.html" data-exempt="true">Tools</a></li>
+                <li><a href="news.html" data-exempt="true">News</a></li> 
+                <li><a href="archives.html" data-exempt="true">Archives</a></li> 
+                <li><a href="organisation.html" data-exempt="true">Organisation</a></li> 
+                <li><a href="services.html" data-exempt="true">Services</a></li>
             </ul>
         </nav>
+        <!-- "data exempt" code was written because the javascript code that fixes the links -->
+         <!-- was interfering with the hamburger menu code -->
         <header>
             <div class="logo-container">
                 <a href="homepage.html"> <img src="images/olaclogo.gif" alt="OLAC Logo" class="olac-logo">
@@ -38,6 +44,7 @@
             </div>
         </header>
        
+        <!-- main text, not much improvement, we did not want to change the information too much, only the style -->
         <main>
             <table class="doc_header">
                 <tbody>
@@ -105,6 +112,9 @@
                 Up-to-date as of: Tue Mar 25 1:00:28 EDT 2025
             </div>
         </main>
+        <!-- We tried a lot of things to make the links work again. we settled on this script.  -->
+    <!-- We got inspiration from this source: https://www.geeksforgeeks.org/how-to-redirect-to-a-relative-url-in-javascript/ -->
+
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 document.querySelectorAll('a').forEach(link => {
@@ -114,5 +124,7 @@
                     }
                 });
         </script>
+        
+        
     </body>
 </html>

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-
+<!-- code for the hamburger menu, improvement from the original website(now has moving parts). -->
 <body>
     <div class="hamburger-menu" onclick="toggleMenu()">
         <div class="line"></div>
@@ -23,13 +23,15 @@
             <li><a href="homepage.html" data-exempt="true">Homepage</a></li>
             <li><a href="about.html" data-exempt="true">About</a></li>
             <li><a href="documents.html" data-exempt="true">Documents</a></li>
-            <li><a href="tools.html" data-exempt="true">Tools</a></li> <!-- Toegevoegd -->
-            <li><a href="news.html" data-exempt="true">News</a></li> <!-- Toegevoegd -->
-            <li><a href="archives.html" data-exempt="true">Archives</a></li> <!-- Toegevoegd -->
-            <li><a href="organisation.html" data-exempt="true">Organisation</a></li> <!-- Toegevoegd -->
-            <li><a href="services.html" data-exempt="true">Services</a></li> <!-- Toegevoegd -->
+            <li><a href="tools.html" data-exempt="true">Tools</a></li> 
+            <li><a href="news.html" data-exempt="true">News</a></li> 
+            <li><a href="archives.html" data-exempt="true">Archives</a></li> 
+            <li><a href="organisation.html" data-exempt="true">Organisation</a></li> 
+            <li><a href="services.html" data-exempt="true">Services</a></li> 
         </ul>
     </nav>
+    <!-- "data exempt" code was written because the javascript code that fixes the links -->
+         <!-- was interfering with the hamburger menu code -->
 </body>
 
     
@@ -47,6 +49,7 @@
     <br> </br>
 
     <!-- The code from the original website -->
+     <!-- main text, not much improvement, we did not want to change the information too much, only the style -->
     <table width="100%" cellspacing="20">
         <tbody>
             <tr>
@@ -311,7 +314,8 @@
             }
         });
     </script>
-      
+      <!-- We tried a lot of things to make the links work again. we settled on this script.  -->
+    <!-- We got inspiration from this source: https://www.geeksforgeeks.org/how-to-redirect-to-a-relative-url-in-javascript/ -->
     
     
 </body>

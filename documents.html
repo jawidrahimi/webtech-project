@@ -20,14 +20,15 @@
                 <li><a href="homepage.html" data-exempt="true">Homepage</a></li>
                 <li><a href="about.html" data-exempt="true">About</a></li>
                 <li><a href="documents.html" data-exempt="true">Documents</a></li>
-                <li><a href="tools.html" data-exempt="true">Tools</a></li> <!-- Toegevoegd -->
-                <li><a href="news.html" data-exempt="true">News</a></li> <!-- Toegevoegd -->
-                <li><a href="archives.html" data-exempt="true">Archives</a></li> <!-- Toegevoegd -->
-                <li><a href="organisation.html" data-exempt="true">Organisation</a></li> <!-- Toegevoegd -->
-                <li><a href="services.html" data-exempt="true">Services</a></li> <!-- Toegevoegd -->
+                <li><a href="tools.html" data-exempt="true">Tools</a></li> 
+                <li><a href="news.html" data-exempt="true">News</a></li> 
+                <li><a href="archives.html" data-exempt="true">Archives</a></li> 
+                <li><a href="organisation.html" data-exempt="true">Organisation</a></li> 
+                <li><a href="services.html" data-exempt="true">Services</a></li> 
             </ul>
         </nav>
-        
+        <!-- "data exempt" code was written because the javascript code that fixes the links -->
+         <!-- was interfering with the hamburger menu code -->
         <header> 
             <div class="logo-container">
                 <a href="homepage.html" data-exempt="true">
@@ -43,6 +44,7 @@
         <br> </br>
 
         <!-- The code from the original website -->
+         <!-- main text, not much improvement, we did not want to change the information too much, only the style -->
         <text>
             <td style="padding: 10pt"><br><h2 style="padding-left: 20px;">OLAC Documents</h2>
                 <table width="90%" cellpadding="5" align="center">
@@ -161,20 +163,21 @@
                     </td>
         </text>
 
-<!-- script for making the links work -->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        if (window.location.pathname.includes("documents.html")) {
-            document.querySelectorAll('a:not([data-exempt])').forEach(link => {
-                let href = link.getAttribute("href");
-                if (href && !href.startsWith("http")) {
-                    link.href = "http://www.language-archives.org" + (href.startsWith("/") ? href : "/" + href);
-                }
-            });
-        }
-    });
-</script>
-
+    <!-- script for making the links work -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.location.pathname.includes("documents.html")) {
+                document.querySelectorAll('a:not([data-exempt])').forEach(link => {
+                    let href = link.getAttribute("href");
+                    if (href && !href.startsWith("http")) {
+                        link.href = "http://www.language-archives.org" + (href.startsWith("/") ? href : "/" + href);
+                    }
+                });
+            }
+        });
+    </script>
+    <!-- We tried a lot of things to make the links work again. we settled on this script.  -->
+    <!-- We got inspiration from this source: https://www.geeksforgeeks.org/how-to-redirect-to-a-relative-url-in-javascript/ -->
         
         
 

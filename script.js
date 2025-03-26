@@ -16,3 +16,5 @@ document.getElementById('searchButton').addEventListener('click', function(){
 function toggleExpand(element) {
     element.classList.toggle('expanded');
 }
+
+// javascript file, for the dropdown menu and the search engine
