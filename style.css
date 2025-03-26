@@ -141,7 +141,7 @@ header {
 /* Map container */
 .map-container {
     width: 50%; /* Adjust as needed */
-    max-width: 1200px; /* Optional: Limit maximum width */
+    max-width: 1200px; /* Limit maximum width */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
 }
