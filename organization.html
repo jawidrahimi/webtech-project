@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OLAC Organization</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hamburger-menu" onclick="toggleMenu()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+
+  <header>
+    <div class="logo-container">
+      <a href="homepage.html">
+        <img src="images/olaclogo.gif" alt="OLAC Logo" class="olac-logo">
+      </a>
+    </div>
+  </header>
+
+  <nav id="dropdown-menu" class="dropdown-menu">
+    <ul>
+      <li><a href="homepage.html">Homepage</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="documents.html">Documents</a></li>
+      <li><a href="tools.html">Tools</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="archives.html">Archives</a></li>
+      <li><a href="organisation.html">Organisation</a></li>
+      <li><a href="services.html">Services</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <section class="org-wrapper">
+      <h1>OLAC Organization</h1>
+      <p>
+        OLAC is an open partnership of institutions and individuals who are working together to create a worldwide virtual library of language resources.
+      </p>
+
+      <h2>Coordinators</h2>
+      <ul>
+        <li>Steven Bird (Department of Computer Science and Software Engineering, University of Melbourne)</li>
+        <li>Gary Simons (SIL International and Graduate Institute of Applied Linguistics)</li>
+      </ul>
+
+      <h2>OLAC Advisory Board</h2>
+      <p>
+        The Advisory Board provides strategic guidance and broadens community participation. It includes representatives from academic and governmental institutions, language resource developers, and representatives from the archives.
+      </p>
+
+      <h2>Working Groups</h2>
+      <p>
+        OLAC's activities are distributed across several working groups focused on specific areas like metadata, controlled vocabularies, infrastructure, tools, and outreach. Members of the community are welcome to join or propose new working groups.
+      </p>
+
+      <h2>Participation</h2>
+      <p>
+        Participation is open to anyone interested in contributing. You can register your archive, subscribe to our mailing list, or get involved with working groups.
+      </p>
+
+      <div class="links">
+        <a href="http://www.language-archives.org/register/archive.html">Register an Archive</a>
+        <a href="http://www.language-archives.org/tools.html">Tools</a>
+        <a href="http://www.language-archives.org/faq.html">FAQ</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('dropdown-menu');
+      menu.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
