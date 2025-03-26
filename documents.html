@@ -17,18 +17,26 @@
         </div>
         <nav id="dropdown-menu" class="dropdown-menu">
             <ul>
-                <li><a href="homepage.html">Homepage</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="documents.html">Documents</a></li>
+                <li><a href="homepage.html" data-exempt="true">Homepage</a></li>
+                <li><a href="about.html" data-exempt="true">About</a></li>
+                <li><a href="documents.html" data-exempt="true">Documents</a></li>
+                <li><a href="tools.html" data-exempt="true">Tools</a></li> <!-- Toegevoegd -->
+                <li><a href="news.html" data-exempt="true">News</a></li> <!-- Toegevoegd -->
+                <li><a href="archives.html" data-exempt="true">Archives</a></li> <!-- Toegevoegd -->
+                <li><a href="organisation.html" data-exempt="true">Organisation</a></li> <!-- Toegevoegd -->
+                <li><a href="services.html" data-exempt="true">Services</a></li> <!-- Toegevoegd -->
             </ul>
         </nav>
         
-        <header>
+        <header> 
             <div class="logo-container">
-                <a href="homepage.html"> <img src="images/olaclogo.gif" alt="OLAC Logo" class="olac-logo">
+                <a href="homepage.html" data-exempt="true">
+                    <img src="images/olaclogo.gif" alt="OLAC Logo" class="olac-logo">
                 </a>
             </div>
         </header>
+        
+        
 
         <br> </br>
         <br> </br>
@@ -154,18 +162,19 @@
         </text>
 
 <!-- script for making the links work -->
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                if (window.location.pathname.includes("documents.html")) {
-                    document.querySelectorAll('a').forEach(link => {
-                        let href = link.getAttribute("href");
-                        if (href && !href.startsWith("http")) {
-                            link.href = "http://www.language-archives.org" + (href.startsWith("/") ? href : "/" + href);
-                        }
-                    });
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        if (window.location.pathname.includes("documents.html")) {
+            document.querySelectorAll('a:not([data-exempt])').forEach(link => {
+                let href = link.getAttribute("href");
+                if (href && !href.startsWith("http")) {
+                    link.href = "http://www.language-archives.org" + (href.startsWith("/") ? href : "/" + href);
                 }
             });
-        </script>
+        }
+    });
+</script>
+
         
         
 
