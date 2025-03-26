@@ -290,3 +290,44 @@ header {
 .information-box.expanded .additional-details {
     display: block; /* Shown when expanded */
 }
+
+        .page-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .faq-section {
+            margin-top: 60px;
+        }
+        .faq-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .faq-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            flex: 1 1 calc(48% - 10px);
+            padding: 15px 20px;
+            transition: 0.3s ease;
+        }
+        .faq-box h3 {
+            cursor: pointer;
+            font-size: 18px;
+            margin: 0;
+        }
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .faq-box.active .faq-answer {
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .faq-box {
+                flex: 1 1 100%;
+            }
+        }
