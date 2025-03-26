@@ -331,3 +331,56 @@ header {
         flex: 1 1 100%;
     }
 }
+
+/* === ORGANIZATION PAGE STYLES === */
+.org-wrapper {
+  max-width: 960px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.org-wrapper p, .org-wrapper li {
+  line-height: 1.6;
+  color: #333;
+}
+
+.org-wrapper ul {
+  padding-left: 20px;
+}
+
+.org-wrapper h1, .org-wrapper h2 {
+  color: #222;
+}
+
+.links {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.links a {
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .org-wrapper {
+    padding: 20px;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+}
+
