@@ -4,6 +4,36 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 30px; 
 }
 
+.content {
+    text-align: center; /* Centers text and links */
+    margin-top: 50px; /* Moves content slightly down */
+}
+
+.content p {
+    margin-bottom: 15px; /* Adds space between paragraphs */
+}
+
+.content a {
+    color: #007bff; /* Default link color */
+    text-decoration: none; /* Removes underline */
+}
+
+.content a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Default link styling */
+a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none; /* No underline by default */
+}
+
+/* Link hover effect */
+a:hover {
+    color: blue; /* Changes color on hover */
+    text-decoration: underline; /* Adds underline on hover */
+}
+
 /* Sets the default font for the body */
 body {
     font-family: 'Georgia', serif; 
@@ -212,46 +242,37 @@ header {
 
 
 
-/* Styling for main content boxes and links */
+/* Existing styles (hamburger menu, header, dropdown) remain here */
+
+.search-results-container {
+    padding: 0 20px; /* Left and right padding */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width */
+}
+
 .information-box {
-    background-color: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
-    border-radius: 15px; /* Rounded corners */
-    padding: 20px; /* Inner spacing */
-    margin: 20px; /* Outer spacing */
-    text-align: center; /* Centers text */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0; /* Top and bottom margin */
+    text-align: left; /* Aligns text left */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smoother transition */
+    cursor: pointer;
 }
 
-
-
-.content {
-    text-align: center; /* Centers text and links */
-    margin-top: 50px; /* Moves content slightly down */
+.information-box h3 {
+    margin-top: 0; /* Remove top margin from h3 */
 }
 
-.content p {
-    margin-bottom: 15px; /* Adds space between paragraphs */
+.information-box a {
+    display: block; /* Make the link a block element */
+    margin-top: 10px; /* Add space between text and link */
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Link color */
 }
 
-.content a {
-    color: #007bff; /* Default link color */
-    text-decoration: none; /* Removes underline */
+.information-box:hover {
+    transform: translateY(-8px); /* More noticeable tilt */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25); /* More pronounced shadow */
 }
-
-.content a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
-/* Default link styling */
-a {
-    color: #007bff; /* Blue color for links */
-    text-decoration: none; /* No underline by default */
-}
-
-/* Link hover effect */
-a:hover {
-    color: blue; /* Changes color on hover */
-    text-decoration: underline; /* Adds underline on hover */
-}
-
-
