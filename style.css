@@ -242,11 +242,10 @@ header {
 
 
 
-/* Existing styles (hamburger menu, header, dropdown) remain here */
-
+/* Search result boxes for search interface */
 .search-results-container {
-    padding: 0 20px; /* Left and right padding */
-    width: 100%; /* Full width */
+    padding: 0 20px; 
+    width: 100%; 
     box-sizing: border-box; /* Include padding in width */
 }
 
@@ -257,8 +256,10 @@ header {
     margin: 20px 0; /* Top and bottom margin */
     text-align: left; /* Aligns text left */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smoother transition */
+    transition: max-height 0.5s ease-in-out; /* Smooth transition */
     cursor: pointer;
+    max-height: 100px; /* Initial height */
+    overflow: hidden;
 }
 
 .information-box h3 {
@@ -275,4 +276,17 @@ header {
 .information-box:hover {
     transform: translateY(-8px); /* More noticeable tilt */
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25); /* More pronounced shadow */
+}
+
+.information-box.expanded {
+    max-height: 500px; /* Expanded height (adjust as needed) */
+}
+
+.additional-details {
+    display: none; /* Initially hidden */
+    margin-top: 10px;
+}
+
+.information-box.expanded .additional-details {
+    display: block; /* Shown when expanded */
 }

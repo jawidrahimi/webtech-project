@@ -34,15 +34,76 @@
                     <p>OLAC resources in and about the Uruguayan Sign Language. ISO 639-3: ugy. Explore resources, language descriptions, and other relevant information.</p>
                     <a href="uruguayan_sign_language.html">View Details</a>
                 </div>
-                <div class="information-box">
-                    <h3>Result 2 Title</h3>
-                    <p>Result 2 Description. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="#">Link to Result 2</a>
+                <div class="information-box" onclick="window.location.href='chichewa_language.html'">
+                    <h2>Chichewa</h2>
+                    <p>OLAC resources in and about the Chichewa Language. ISO 639-3: nya. Explore resources, language descriptions, and other relevant information.</p>
+                    <a href="chichewa_language.html">View Details</a>
                 </div>
                 <div class="information-box">
                     <h3>Result 3 Title</h3>
                     <p>Result 3 Description. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
                     <a href="#">Link to Result 3</a>
+                </div>
+            </div>
+        </main>
+    </body>
+</html><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OLAC Search Results</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav id="dropdown-menu" class="dropdown-menu">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="search_interface.html">Search</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="logo-container">
+                <a href="homepage.html"> <img src="images/olaclogo.gif" alt="OLAC Logo" class="olac-logo">
+                </a>
+            </div>
+        </header>
+        <main class="main-content">
+            <h1>Search Results</h1>
+            <div class="search-results-container">
+                <div class="information-box">
+                    <h2 onclick="toggleExpand(this.parentElement)">Uruguayan Sign Language</h2>
+                    <p onclick="toggleExpand(this.parentElement)">OLAC resources in and about the Uruguayan Sign Language. ISO 639-3: ugy. Explore resources, language descriptions, and other relevant information.</p>
+                    <a href="uruguayan_sign_language.html">View Details</a>
+                    <div class="additional-details">
+                        <p>More detailed information about Uruguayan Sign Language goes here.</p>
+                        <p>You can add more paragraphs or other HTML elements.</p>
+                    </div>
+                </div>
+                <div class="information-box">
+                    <h2 onclick="toggleExpand(this.parentElement)">Chichewa</h2>
+                    <p onclick="toggleExpand(this.parentElement)">OLAC resources in and about the Chichewa Language. ISO 639-3: nya. Explore resources, language descriptions, and other relevant information.</p>
+                    <a href="chichewa_language.html">View Details</a>
+                    <div class="additional-details">
+                        <p>Detailed information about Chichewa.</p>
+                        <p>Add more content here.</p>
+                    </div>
+                </div>
+                <div class="information-box">
+                    <h3 onclick="toggleExpand(this.parentElement)">Result 3 Title</h3>
+                    <p onclick="toggleExpand(this.parentElement)">Result 3 Description. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    <a href="#">Link to Result 3</a>
+                    <div class="additional-details">
+                        <p>More details for Result 3.</p>
+                        <p>And more content.</p>
+                    </div>
                 </div>
             </div>
         </main>

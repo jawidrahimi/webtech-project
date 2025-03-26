@@ -12,3 +12,7 @@ document.getElementById('searchInput').addEventListener('keydown', function(even
 document.getElementById('searchButton').addEventListener('click', function(){
     window.location.href = 'search_results.html';
 });
+
+function toggleExpand(element) {
+    element.classList.toggle('expanded');
+}
