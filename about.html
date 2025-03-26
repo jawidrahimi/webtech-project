@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About | OLAC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <a href="homepage.html">
+                <img src="images/olaclogo.gif" alt="OLAC Logo" class="olac-logo">
+            </a>
+        </div>
+    </header>
+
+    <nav id="dropdown-menu" class="dropdown-menu">
+        <ul>
+            <li><a href="homepage.html">Homepage</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="archives.html">Archives</a></li>
+            <li><a href="organisation.html">Organisation</a></li>
+            <li><a href="services.html">Services</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="page-wrapper">
+            <!-- (Rest of the About content remains the same) -->
+
+            <section class="contact-section" style="margin-top: 60px; margin-bottom: 60px;">
+                <h2>Contact</h2>
+                <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; align-items: center;">
+                    <div style="flex: 1 1 45%; min-width: 250px;">
+                        <p>If you have any questions, suggestions, or want to contribute to the OLAC project, please don’t hesitate to reach out.</p>
+                        <p><strong>Email:</strong> <a href="mailto:info@language-archives.org">info@language-archives.org</a></p>
+                        <p><strong>Address:</strong><br>
+                            OLAC Coordination Team<br>
+                            Linguistics Department<br>
+                            Global University<br>
+                            123 Academic Way<br>
+                            City, Country ZIP
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-row">
+                    <div class="faq-box" onclick="this.classList.toggle('active')">
+                        <h3>What is OLAC?</h3>
+                        <div class="faq-answer">
+                            OLAC is a network of language archives and services built around shared metadata standards and protocols.
+                        </div>
+                    </div>
+
+                    <div class="faq-box" onclick="this.classList.toggle('active')">
+                        <h3>Is OLAC a data archive?</h3>
+                        <div class="faq-answer">
+                            No. OLAC is not an archive itself, but a registry and aggregator of metadata from other archives.
+                        </div>
+                    </div>
+
+                    <div class="faq-box" onclick="this.classList.toggle('active')">
+                        <h3>How can I register my archive?</h3>
+                        <div class="faq-answer">
+                            You can register by following the guidelines in the Tools section, and submitting metadata in OLAC format.
+                        </div>
+                    </div>
+
+                    <div class="faq-box" onclick="this.classList.toggle('active')">
+                        <h3>Is there a search interface?</h3>
+                        <div class="faq-answer">
+                            Yes. OLAC provides a faceted search tool accessible from <a href="http://search.language-archives.org">here</a>.
+                        </div>
+                    </div>
+
+                    <div class="faq-box" onclick="this.classList.toggle('active')">
+                        <h3>Who maintains OLAC?</h3>
+                        <div class="faq-answer">
+                            OLAC is maintained by a community of volunteer contributors, led by linguists and technologists worldwide.
+                        </div>
+                    </div>
+
+                    <div class="faq-box" onclick="this.classList.toggle('active')">
+                        <h3>What kind of resources are included?</h3>
+                        <div class="faq-answer">
+                            Resources include grammars, dictionaries, audio recordings, video documentation, corpora, and more.
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('dropdown-menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
